@@ -4,11 +4,23 @@ Author: Guillermo Jimenez
 ## Reference
 Challenge: https://gist.github.com/joseamuniz/c2dced8e82158702f991f71174ebf801
 
-## Implementation options
+## Implementation
+### Requirements
+- Quick prototype: Shouldn't take more than a couple hours of development.
+- Third-party tools: Any library or framework used should be open source /freely available.
+- Responsive design: The page should work well under different viewports, both desktop and mobile.
+### Constraints
+It is assumed, based on the challenge description, that the final deliverable should be in the form of a single `html` file (mockup is single-page) and one or more `css` files. This means it should be able to be rendered without including any `js` files, or the need of a Javascript runtime at all.
+### Options
 - Single file static page (selected):
+    - Pros: Quickest method to develop. Closest from inception to wanted end result. Fastest to compile and render.
+    - Cons: No markup/component modularity/reusability. Functionalities (js) not easily implementable in an scalable way.
 - Template Engine-rendered page:
+    - Pros: Good middleground between raw html and component-based (easier to translate to the latter). Added development features (conditions, imports, etc.). Can be compiled to no-js target.
+    - Cons: Each templating engine has a different syntax (would need to translate back to html/jsx/... if stack is changed). Depending on engine, syntax might be cumbersome to maintain and add attributes/metadata to. In a team, it would be an extra learning curve for many.
 - Component-based application:
-
+    - Pros: Modular approach, potentially faster to implement functionalities, existing ecosystems, etc...
+    - Cons: No static page target (js required).
 
 ## Result
 _[screenshot]_
