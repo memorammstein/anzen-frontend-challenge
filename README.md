@@ -17,7 +17,7 @@ It is assumed, based on the challenge description, that the final deliverable sh
     - Cons: No markup/component modularity/reusability. Functionalities (js) not easily implementable in an scalable way.
 - Template Engine-rendered page:
     - Pros: Good middleground between raw html and component-based (easier to translate to the latter). Added development features (conditions, imports, etc.). Can be compiled to no-js target.
-    - Cons: Each templating engine has a different syntax (would need to translate back to html/jsx/... if stack is changed). Depending on engine, syntax might be cumbersome to maintain and add attributes/metadata to. In a team, it would be an extra learning curve for many.
+    - Cons: Added project setup required. Each templating engine has a different syntax (would need to translate back to html/jsx/... if stack is changed). Depending on engine, syntax might be cumbersome to maintain and add attributes/metadata to. In a team, it would be an extra learning curve for many.
 - Component-based application:
     - Pros: Modular approach, potentially faster to implement functionalities, existing ecosystems, etc...
     - Cons: No static page target (js required).
