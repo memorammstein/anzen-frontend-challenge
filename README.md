@@ -4,6 +4,22 @@ Author: Guillermo Jimenez
 ## Reference
 Challenge: https://gist.github.com/joseamuniz/c2dced8e82158702f991f71174ebf801
 
+## How to run
+### Install dependencies
+```
+npm install
+```
+
+### Development server (with hot-reloading)
+```
+npm start
+```
+
+### Production build
+```
+npm run build
+```
+
 ## Implementation
 ### Requirements
 - Quick prototype: Shouldn't take more than a couple hours of development.
@@ -82,3 +98,7 @@ While documents could be included as direct cdn/storage urls, creating a `files`
     - Flexibility: custom parameters could be passed down to the endpoint to, for example, configure delivery options.
     - Security: the same auth configuration/middleware setup used for other endpoints could be used here (instead of a separate setup, if required).
 - Auth (extra): The provided mockup does not include a header (or any other) section that displays an active user account (session), but considering the data displayed on the main body, it could be assumed that some sort of authentication/authorization middleware would be required for the other endpoints.
+
+## Known issues
+- Webpack adds an empty `index.js` file to the output build, and adds an import tag for it to `index.html`. This has no effect on the page, thus, both the file and the import can be removed or ignored. Configuring the build to omit (or programatically removing) it would require extra work outside the scope of this project.
+- A general `bulma` styling library import is used in this project, which might cause unrequired styles to be imported. One solution to this is importing each section of the library independently, but this requires extra work to figure out which parts of the lib are needed and their location.
