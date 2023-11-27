@@ -1,0 +1,19 @@
+{
+  "name": "anzen-frontend-challenge",
+  "version": "0.0.1",
+  "description": "Frontend challenge for Anzen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memorammstein/anzen-frontend-challenge.git"
+  },
+  "author": "Guillermo Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memorammstein/anzen-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/memorammstein/anzen-frontend-challenge#readme"
+}
