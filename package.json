@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Frontend challenge for Anzen",
   "scripts": {
+    "prebuild": "rm -rf ./dist",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
