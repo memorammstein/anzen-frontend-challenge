@@ -28,14 +28,27 @@ module.exports = {
         use: [
             MiniCssExtractPlugin.loader,
             {
-              loader: 'css-loader'
+              loader: 'css-loader',
+              options: { importLoaders: 1 },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    [
+                      "autoprefixer",
+                    ],
+                  ],
+                },
+              },
             },
             {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
               }
-            }
+            },
           ],
           include: [path.resolve(__dirname, "src/styles")],
       }
