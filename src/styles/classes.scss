@@ -1,0 +1,140 @@
+.container {
+    padding: 1rem;
+}
+
+.navigation {
+    @extend .is-uppercase;
+    @extend .has-text-weight-semibold;
+    font-size: 0.8571428571rem;
+    letter-spacing: 0.01714285714rem;
+    line-height: 4rem;
+    margin-bottom: 0;
+    margin-left: -0.2857142857rem;
+    margin-top: 3rem;
+    & a {
+        color: $text-light;
+    }
+}
+
+// Employee Info Grid
+.employee-info {
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    display: inline-grid;
+    .employee-avatar {
+        grid-area: avatar;
+    }
+    .employee-main {
+        grid-area: main;
+    }
+    .employee-secondary {
+        grid-area: secondary
+    }
+    grid-template-areas:
+        "avatar main"
+        "avatar secondary";
+    @include mobile {
+        grid-template-areas:
+            "avatar"
+            "main"
+            "secondary";
+    }
+}
+
+.employee-info {
+    margin: 3.4285714286rem 3.1428571429rem 6.1428571429rem;
+    @include mobile {
+        margin: 2rem;
+    }
+}
+
+.employee-main {
+    margin-top: 0.5rem;
+}
+
+.employee-avatar {
+    height: 13.1428571429rem;
+    width: 13.5714285714rem;
+    @include mobile {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+.employee-name {
+    @extend .title;
+    font-size: 2.4285714286rem;
+    line-height: 2.7142857143rem;
+}
+
+.employee-position {
+    @extend .subtitle;
+    @extend .is-uppercase;
+    @extend .has-text-weight-semibold;
+    background: linear-gradient(89deg, #5062C0 22.12%, #5349A0 98.4%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.8571428571rem;
+    letter-spacing: 0.03428571429rem;
+}
+
+// Employee Field grid
+.employee-field {
+    display: grid;
+    grid-template-areas: "title description";
+    grid-template-columns: 7rem auto;
+}
+
+.employee-field {
+    margin-bottom: 0.8571428571rem;
+    &>*:first-child {
+        color: $text-light;
+    }
+}
+
+.table {
+    border-radius: $box-radius;
+    thead th, tbody td {
+        border-width: 0 0 1px;
+        border-color: #D9D8E880;
+    }
+    thead {
+        background-color: #F7F6FF;
+        opacity: 0.6;
+        th {
+            @extend .is-uppercase;
+            @extend .has-text-weight-semibold;
+            color: $text-light;
+            font-size: 0.7857142857rem;
+            height: 2.9285714286rem;
+            letter-spacing: 0.01571428571rem;
+            vertical-align: middle;
+        }
+    }
+    tbody {
+        @extend .has-text-weight-light;
+        tr {
+            height: 3.1428571429rem;
+            td {
+                padding: 0.4285714286rem 0.75rem;
+                vertical-align: middle;
+
+                .button {
+                    color: $text-strong;
+                    font-size: 0.9285714286rem;
+                    height: 2.2857142857rem;
+                }
+            }
+        }
+    }
+}
+
+.onboarding-status {
+    margin-right: 5rem;
+    text-align: center !important;
+}
+
+.onboarding-status-legend {
+    @extend .is-italic;
+    color: #828094;
+}

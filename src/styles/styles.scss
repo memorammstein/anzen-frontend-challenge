@@ -1,7 +1,23 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+$body-background-color: #F4F3FC;
+$body-size: 14px;
+$box-padding: 0;
+$box-radius: 4px;
+$box-shadow: 10px 10px 20px 0px rgba(230, 233, 236, 0.44);
+$family-sans-serif: 'Outfit', sans-serif;
+$green: #1EB452;
+$red: #ED5252;
+$section-padding: 1.5rem;
+$text: #59576D;
+$text-light: #A3A1B5;
+$text-strong: #261F67;
 
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~bulma/bulma";
+@import "./classes";

@@ -8,17 +8,13 @@
   </head>
   <body>
     <div class="container">
-      <nav class="breadcrumb">
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon is-small" aria-hidden="true">
-                <i class="fas fa-chevron-left"></i>
-              </span>
-              <span>Back</span>
-            </a>
-          </li>
-        </ul>
+      <nav class="navigation">
+        <a href="#">
+          <span class="icon is-small" aria-hidden="true">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>Back</span>
+        </a>
       </nav>
       <main>
         <div aria-label="employee info" class="box">
@@ -27,8 +23,8 @@
               <img class="is-rounded" src="https://i.pravatar.cc/256" />
             </figure>
             <div class="employee-main">
-              <h2 class="title">Jane Scott</h2>
-              <h3 class="subtitle">Accountant</h3>
+              <h2 class="employee-name">Jane Scott</h2>
+              <h3 class="employee-position">Accountant</h3>
             </div>
             <div class="employee-secondary">
               <ul>
@@ -69,8 +65,13 @@
             </div>
           </div>
         </div>
-        <div aria-label="employee onboarding steps" class="box p-0">
+        <div aria-label="employee onboarding steps" class="box">
           <table class="table is-fullwidth is-hoverable">
+            <colgroup>
+              <col span="1" style="width: 25%;" />
+              <col span="1" style="width: 15%;" />
+              <col span="1" style="width: 60%;" />
+            </colgroup>
             <thead>
               <tr>
                 <th>Onboarding steps</th>
@@ -83,7 +84,7 @@
                 <td>Offer letter signatures</td>
                 <td class="onboarding-status">
                   <span class="icon has-text-success" role="status" title="complete">
-                    <i class="fas fa-circle-check"></i>
+                    <i class="fas fa-lg fa-circle-check"></i>
                   </span>
                 </td>
                 <td>
@@ -102,7 +103,7 @@
                 </td>
                 <td class="onboarding-status">
                   <span class="icon has-text-danger" role="status" title="incomplete">
-                    <i class="fas fa-circle-xmark"></i>
+                    <i class="fas fa-lg fa-circle-xmark"></i>
                   </span>
                 </td>
                 <td>
@@ -116,8 +117,8 @@
                   Background checks completed
                 </td>
                 <td class="onboarding-status">
-                  <span class="icon has-text-grey" role="status" title="not valid">
-                    <i class="fas fa-circle-xmark"></i>
+                  <span class="icon has-text-grey-light" role="status" title="not valid">
+                    <i class="fas fa-lg fa-circle-xmark"></i>
                   </span>
                 </td>
                 <td>
@@ -132,7 +133,7 @@
                 </td>
                 <td class="onboarding-status">
                   <span class="icon has-text-danger" role="status" title="incomplete">
-                    <i class="fas fa-circle-xmark"></i>
+                    <i class="fas fa-lg fa-circle-xmark"></i>
                   </span>
                 </td>
                 <td>
@@ -147,7 +148,7 @@
                 </td>
                 <td class="onboarding-status">
                   <span class="icon has-text-success" role="status" title="complete">
-                    <i class="fas fa-circle-check"></i>
+                    <i class="fas fa-lg fa-circle-check"></i>
                   </span>
                 </td>
                 <td>
@@ -165,7 +166,7 @@
                 </td>
                 <td class="onboarding-status">
                   <span class="icon has-text-success" role="status" title="complete">
-                    <i class="fas fa-circle-check"></i>
+                    <i class="fas fa-lg fa-circle-check"></i>
                   </span>
                 </td>
                 <td>
