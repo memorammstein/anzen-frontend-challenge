@@ -39,7 +39,7 @@ It is assumed, based on the challenge description, that the final deliverable sh
     - Cons: No static page target (js required).
 
 ## Result
-_[screenshot]_
+![end result screenshot](./result.png)
 
 ## Backend endpoints
 - `/user/:id/details`:
